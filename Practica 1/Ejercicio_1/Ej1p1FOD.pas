@@ -5,7 +5,7 @@ var
 	arch_num: numero;
 	num: integer;
 begin
-	Assign(arch_num, 'Av');
+	Assign(arch_num, 'AV');
 	rewrite( arch_num);
 	writeln( ' ingrese un numero');
 	readln( num);

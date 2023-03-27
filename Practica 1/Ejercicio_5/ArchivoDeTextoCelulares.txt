@@ -1,0 +1,2 @@
+
+Cod 1  nom: 2 descripcion  3  marca  4  precio:   5.0000000000000000E+000  stockMin  6  stockD  7

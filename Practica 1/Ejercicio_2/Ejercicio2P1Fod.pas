@@ -3,7 +3,7 @@ type
 	numero = file of integer;
 	
 var
-	arch_num: numero;
+	arch_num: numero0
 	nom: string[20];
 	cont: integer;
 	i,c: integer;
@@ -22,8 +22,7 @@ begin
 	if(i < 1500) then 
 		cont:= cont + 1;
 	end;
-	//prom:= 
-	writeln('el promedio de numeros es de ' , c/fileSize(arch_num):3:3);
-	writeln('la cantidad  de numeros menores a 1500 es de : ', cont);
+	writeln('El promedio de numeros es de ' , c/fileSize(arch_num):3:3);
+	writeln('La cantidad  de numeros menores a 1500 es de : ', cont);
 	close(arch_num);
 end.	
