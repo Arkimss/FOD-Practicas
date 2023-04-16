@@ -1,6 +1,5 @@
- 1 -29789 Braian  Estabil 18
- 2 18787 Alfonso  Diaz 19
- 3 22000 Alejandro  Acosta 19
- 4 17728 Mariano  Coria 19
- 5 8927 Yael  Cuestas 21
- 6 19 Lucia  maceira 19
+ 1 -19967 Ale  Acosta 19
+ 2 -23537 Yael  Cuestas 21
+ 3 -21215 Picu  Diaz 19
+ 4 4333 Mariano  Coria 20
+ 5 4433 Braian  Estabil 99

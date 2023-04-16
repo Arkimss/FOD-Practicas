@@ -1,0 +1,2 @@
+ |cod_prenda 2|  |Descripcion: lindo|  |Colores: azu¤|   |Tipo de Prenda: remera|  |Stock: 3| Precio Unitario: 2000.000 | 
+ |cod_prenda 23|  |Descripcion: campera  fina|  |Colores: violeta|   |Tipo de Prenda: campera|  |Stock: 20| Precio Unitario: 10000.000 | 

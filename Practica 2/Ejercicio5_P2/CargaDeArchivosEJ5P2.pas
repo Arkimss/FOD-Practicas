@@ -140,9 +140,9 @@ begin
 		assign(vecNac[i], ' DetNac' + i_st);
 	    assign(vecFal[i], ' DetFal' + i_st);
 	    rewrite(vecNac[i]);
-	     rewrite(vecFal[i]);
+	    rewrite(vecFal[i]);
 		LeerNacimiento(D,i);
-		LeerFallecido(E,i);
+		LeerFallecido(E,i+1);
 		write(vecNac[i],D);
 		write(vecFal[i],E);
 		close(vecNac[i]);

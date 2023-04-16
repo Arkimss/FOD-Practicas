@@ -1,8 +1,8 @@
-NumP: 1 DNI: 1 num_Mat_med 1 Nom 1
- Apellido 1
- DNI_Madre: 1  NYA_Madre 1
- DNI_Padre : 1 NYA_Padre 1
- fallecido: TRUE num_Mat_med_d 12545  FyH_Deceso 0 lugarF 
+NumP: 0 DNI: 0 num_Mat_med 0 Nom 
+ Apellido 
+ DNI_Madre: 0  NYA_Madre 
+ DNI_Padre : 0 NYA_Padre 
+ fallecido: FALSE num_Mat_med_d 9999  FyH_Deceso 9999 lugarF Is a live
 NumP: 2 DNI: 2 num_Mat_med 2 Nom 2
  Apellido 2
  DNI_Madre: 2  NYA_Madre 2

@@ -1,0 +1,6 @@
+El codigo de la flor es: -3 Y su nombre es :***
+El codigo de la flor es: 10 Y su nombre es :Girasol
+El codigo de la flor es: -6 Y su nombre es :***
+El codigo de la flor es: 9 Y su nombre es :violeta
+El codigo de la flor es: 12 Y su nombre es :margarita
+El codigo de la flor es: 0 Y su nombre es :unknow

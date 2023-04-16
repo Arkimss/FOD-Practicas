@@ -1,0 +1,4 @@
+El codigo de la flor es: -3 Y su nombre es :***
+El codigo de la flor es: 0 Y su nombre es :unknow
+El codigo de la flor es: -2 Y su nombre es :***
+El codigo de la flor es: 50 Y su nombre es :rosa

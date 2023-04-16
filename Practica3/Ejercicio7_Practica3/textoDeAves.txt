@@ -1,0 +1,4 @@
+cod: 1023  especie: Larus  familia: gaviota  descripcion: fea  ZonaG: playa
+cod: 1024  especie: struthio  familia: avestruz  descripcion: alta  ZonaG: campo
+cod: 1  especie: larus  familia: gaviota negra  descripcion: es negra  ZonaG: playa oscura
+cod: 
