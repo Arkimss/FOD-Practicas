@@ -40,6 +40,7 @@ begin
 		leerA(d);
 	end;
 	close(a);
+	close(t);
 		{with aux do begin
 			readln(t, cod, especie);
 			readln(t, familia);
@@ -57,6 +58,28 @@ procedure LeerDeArch(var a:archA; var dato: ave);
 begin
 	if not eof(a) then read(a, dato)
 	else dato.cod := valoralto;
+end;
+
+procedure impA(a:ave);
+begin 
+	writeln(a.cod);
+	writeln(a.especie);
+	writeln(a.familia);
+	writeln(a.descripcion);
+	writeln(a.zonaG);
+	writeln();
+end;
+procedure imp(var a:archA);
+var
+	d: ave;
+begin 
+	reset(a);
+	LeerDeArch(a,d);
+	while(d.cod <> valorAlto) do begin 
+		impA(d);
+		LeerDeArch(a,d);
+	end;
+	close(A);
 end;
 procedure EliminarLog(var a:archA);
 var
@@ -83,27 +106,27 @@ begin
 	end;
 	close(a);
 end;
+
 procedure EliminarFisico(var a:archA);
 var
 	d:ave;
-	pos,cont:integer;
+	pos:integer;
 begin
 	reset(a);
 	LeerDeArch(a,d);
-	cont:= 2;
 	while(d.cod<>valorAlto)  do begin
 		if(d.especie = marca) then begin 
 			pos:= FilePos(a)-1;// me guardo la posicion en la que hay espacio
 			seek(a,FileSize(a)-1);// obtengo el elemento en la ultima posicion del archivo
 			LeerDeArch(a,d);
-			seek(a,pos);// pongo el ultimo elemento del archivo en un espacio libre
-			write(a,d);
-			cont-=1;
+			if(d.especie <> marca) then begin // si el ultimo elemento del archivo no es un elemento borrado, lo pongo en el espacio libre
+				seek(a,pos);// pongo el ultimo elemento del archivo en un espacio libre
+				write(a,d);
+			end;
 			seek(a,Filesize(a)-1);// pongo el EOF sobre el ultimo elemento del archivo
 			truncate(a);
-			//reset(a);// me posiciono de nuevo al principio del archivo en busca de espacios libres.
-			write( cont );
-			seek(a,0);
+			//	write( cont );
+			seek(a,pos);
 		end;
 		LeerDeArch(a,d);
 	end;
@@ -130,7 +153,8 @@ begin
 	writeln('.................................');
 		writeln('Ingrese 1 para eliminar elementos logicamente del archivo ');
 		writeln('Ingrese 2 Para Eliminar Fisicamente los elementos borrados logicamente');;
-		writeln('Ingrese 3 para dejar de trabajar con el archivo');
+		writeln('Ingrese 3 para imprimir');
+		writeln('Ingrese 4 para dejar de trabajar con el archivo ');
 		writeln('.................................');
 end;
 
@@ -140,10 +164,11 @@ var
 begin
 		imprimirOp2();
 		readln(num);
-		while(num<3) do begin
+		while(num<4) do begin
 			case num of
 				1: EliminarLog(a);
 				2: EliminarFisico(a);
+				3: imp(a);
 			end;
 			imprimirOp2();
 			readln(num);
@@ -179,8 +204,8 @@ var
 	a: archA;
 	t:text;
 begin 
-	Assign(t,'infoAves.txt');
 	Assign(a,'ArchAves');
 	menu(a,t);
+	imp(a);
 	te(a);
 end.

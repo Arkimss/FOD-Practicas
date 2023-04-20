@@ -1,4 +1,5 @@
-cod: 1023  especie: Larus  familia: gaviota  descripcion: fea  ZonaG: playa
-cod: 1024  especie: struthio  familia: avestruz  descripcion: alta  ZonaG: campo
-cod: 1  especie: larus  familia: gaviota negra  descripcion: es negra  ZonaG: playa oscura
-cod: 
+cod: 1  especie: Larus  familia: Gaviota  descripcion: blanca   ZonaG: Argentina
+cod: 2  especie: Trothius  familia: Avestruz  descripcion: alta y agresiva  ZonaG: Africa
+cod: 3  especie: Columbia  familia: Paloma  descripcion: amigabl  ZonaG: Ciudades
+cod: 4  especie: lorito  familia: Loro  descripcion: habla mucho  ZonaG: sudamerica
+cod: 5  especie: Aguila Real  familia: Aguila  descripcion: grande  ZonaG: Argentina

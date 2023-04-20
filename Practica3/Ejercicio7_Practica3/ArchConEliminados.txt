@@ -1,4 +1,2 @@
-| cod: 1| |especie: ***|  |familia gaviota negra |
- |descripcion: es negra| |ZonaG playa oscura |
-| cod: 1024| |especie: struthio|  |familia avestruz |
- |descripcion: alta| |ZonaG campo |
+| cod: 5| |especie: Aguila Real|  |familia Aguila |
+ |descripcion: grande| |ZonaG Argentina |

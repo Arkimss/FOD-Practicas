@@ -1,0 +1,13 @@
+caso base: si es  null, retornas el minimo
+sino
+tomar raiz
+preguntas cant hijos
+dividis el num por cant de hijos
+recursivo
+
+
+if(this <> null)
+{
+	aux = this.GetDato() / this.GetHijos().length();
+	minimo(aux);
+}
