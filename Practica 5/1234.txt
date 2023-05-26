@@ -1,0 +1,19 @@
+Sinonimos: Los sinonimos son claves a las que se le asigna la misma dirección de memoria luego de aplicar la función de hash.
+
+Colisión: Una colisión se produce cuando se le asigna a una dirección de memoria que ya contiene uno o más registros.
+
+Desborde: Un desborde se produce cuando no hay espacio en la dirección de memoria asignada por la función hash. 
+
+relacion entre espacio utilizado y espacio disponible.
+Densidad de empaquetamiento: Es la relación entre la cantidad total de registros y el espacio total del archivo.es decir = Número de registros/ capacidad total del archivo(cantidad de registros que puede almacenar).
+Mientras menor densidad de empaquetamiento, hay menor probabilidad de overflow porque hay más registros por dirección de memoria.
+Mientras mayor es hay más probabilidad porque hay menor cantidad de registros y puede producirse overflow más facilmente.
+
+
+
+
+Saturación progresiva: Cuando en la dirección base asignada a un registro se produce desborde, se coloca el registro en el primer lugar libre del archivo, y se convierte en una clave intrusa.
+Saturación progresiva encadenada: Se encadenan los sinonimos, cada sinonimo cuenta con la posición en el archivo en la que se encuentra el siguiente sinonimo.
+Saturación progresiva encadenada en áreas separadas: Se tiene un archivo con las direcciones base de cada función hash, con un puntero a otro archivo para guardar las direcciones en un área de desbordes. Cuando se produce saturación en el archivo base, se manda el registro al archivo de desbordes y si en el área de desbordes hay más sinonimos, se encadenan.
+Doble Dispersión: Se añade a la primer función hash que devuelve la dirección base, una segunda función de distancia, para realizar un desplazamiento y ubicarlo en una dirección más lejana.
+

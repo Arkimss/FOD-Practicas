@@ -1,0 +1,21 @@
+Id : atributo autoincremental, numerica.
+
+Clases a declarar: Titular, vehículo, Póliza, siniestro y tercero.
+
+Se debe crear una solución con tres proyectos.
+
+
+Titular y tercero deben tener una clase padre en común, porque sus elementos son parecidos.
+
+
+En esta entrega solo se entrega Titular implementado.(?)
+
+Aseguradora.Repositorio, encargado de persistir mism elementos.
+
+Casos de uso, utilizando persistencia.
+
+
+Para que se imprima la id del   , debe persistirse el dato despues de ser instanciado.
+
+Se deben crear una interfaz para Póliza, para Vehículo y Titular, y luego aplicar inyección de dependencia y crear un repositorio en texto plano para cada una
+.
